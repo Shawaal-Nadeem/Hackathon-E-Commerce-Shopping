@@ -3,24 +3,25 @@ import Link from "next/link"
 import Style from './navbar.module.css';
 import { useState } from "react";
 import { AiOutlineSearch } from 'react-icons/ai';
+import { FiShoppingCart } from 'react-icons/fi'
 export default function Navbar()
 {
   const [now,update]=useState('now');
   const before=(
     <header className={Style.header}>
         <nav>
-        <img src="https://hackathon-dine-market.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.83c5fd82.png&w=256&q=75" alt="logo"></img>
+       <Link href={'/'}><img src="https://hackathon-dine-market.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.83c5fd82.png&w=256&q=75" alt="logo"></img></Link>
           <ul>
-           <Link href={'/'}><li>Female</li></Link>
-           <Link href={'/about'}><li>Male</li></Link>
-           <Link href={'/contact'}><li>Kids</li></Link>
-           <Link href={'/contact'}><li>All Products</li></Link>
+           <Link href={'/female'}><li>Female</li></Link>
+           <Link href={'/male'}><li>Male</li></Link>
+           <Link href={'/kids'}><li>Kids</li></Link>
+           <Link href={'/all_products'}><li>All Products</li></Link>
           </ul>
-          {/* <div>
+          <div>
 <AiOutlineSearch/>
 <input placeholder="What are you looking for" className=" border-solid border-2 border-lime-700"/>
-          </div> */}
-          
+          </div>
+         <Link href={'/shopping-cart'}><button className="cart"><FiShoppingCart size={25}/></button></Link>
         </nav>
       </header>
   );
