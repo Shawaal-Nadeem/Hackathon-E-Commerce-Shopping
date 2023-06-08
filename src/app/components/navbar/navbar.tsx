@@ -4,6 +4,7 @@ import Style from './navbar.module.css';
 import { useState } from "react";
 import { AiOutlineSearch } from 'react-icons/ai';
 import { FiShoppingCart } from 'react-icons/fi'
+import {RxHamburgerMenu} from 'react-icons/rx'
 export default function Navbar()
 {
   const [now,update]=useState('now');
@@ -17,7 +18,7 @@ export default function Navbar()
            <Link href={'/kids'}><li>Kids</li></Link>
            <Link href={'/all_products'}><li>All Products</li></Link>
           </ul>
-          <div>
+          <div className={Style.input}>
 <AiOutlineSearch/>
 <input placeholder="What are you looking for" className=" border-solid border-2 border-lime-700"/>
           </div>
@@ -42,7 +43,10 @@ export default function Navbar()
  
     return (
       <div>
-        <button className={Style.p} type="button" onClick={()=>update(now === 'now' ? 'mobile' : 'now')}>Burger Menu</button>
+        <button className={Style.p} type="button" onClick={()=>update(now === 'now' ? 'mobile' : 'now')}>
+          {/* <RxHamburgerMenu size={21}/> */}
+          button
+        </button>
       {now==='now' ?before:after}
       </div>
     )
