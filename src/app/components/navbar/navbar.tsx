@@ -5,6 +5,7 @@ import { useState } from "react";
 import { AiOutlineSearch } from 'react-icons/ai';
 import { FiShoppingCart } from 'react-icons/fi'
 import {RxHamburgerMenu} from 'react-icons/rx'
+import {IoCloseOutline} from 'react-icons/io5'
 export default function Navbar()
 {
   const [now,update]=useState('now');
@@ -22,17 +23,31 @@ export default function Navbar()
 <AiOutlineSearch/>
 <input placeholder="What are you looking for" className=" border-solid border-2 border-lime-700"/>
           </div>
-         <Link href={'/shopping-cart'}><button className="cart"><FiShoppingCart size={25}/></button></Link>
+         <Link href={'/shopping-cart'}><button className={Style.cart}><FiShoppingCart size={25}/></button></Link>
+         <button className={Style.p} type="button" onClick={()=>update(now === 'now' ? 'mobile' : 'now')}>
+          <RxHamburgerMenu size={21}/>
+        </button>
         </nav>
       </header>
   );
   const after=(
     <div className={Style.mobileview}>
-      <div>
+      <div className={Style.main}>
+        <div className={Style.subMain}>
+        <button className ={Style.closeBtn} type="button" onClick={()=>update(now === 'now' ? 'mobile' : 'now')}>
+          <IoCloseOutline size={27}/>
+          </button>
+        </div>
+      </div>
+      <div className={Style.navBtns}>
+        <div className={Style.icon}>
+      <Link href={'/shopping-cart'}><button className={Style.cart}><FiShoppingCart size={25}/></button></Link>
+      </div>
       <ul>
-      <Link href={'/'}><li onClick={()=>update('now')}>Home</li></Link>
-      <Link href={'/about'}><li onClick={()=>update('now')}>About</li></Link>
-      <Link href={'/contact'}><li onClick={()=>update('now')}>Contact</li></Link>
+      <Link href={'/female'}><li onClick={()=>update('now')}>Female</li></Link>
+      <Link href={'/male'}><li onClick={()=>update('now')}>Male</li></Link>
+      <Link href={'/kids'}><li onClick={()=>update('now')}>Kids</li></Link>
+      <Link href={'/all_products'}><li onClick={()=>update('now')}>All Products</li></Link>
       </ul>
       </div>
  
@@ -43,10 +58,6 @@ export default function Navbar()
  
     return (
       <div>
-        <button className={Style.p} type="button" onClick={()=>update(now === 'now' ? 'mobile' : 'now')}>
-          {/* <RxHamburgerMenu size={21}/> */}
-          button
-        </button>
       {now==='now' ?before:after}
       </div>
     )
