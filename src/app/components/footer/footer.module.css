@@ -30,7 +30,6 @@ background-color: rgb(243, 244, 246);
 display: flex;
 align-items: center;
 justify-content: center;
-
 }
 .footerCol2 h3
 {
@@ -72,4 +71,61 @@ margin-top: 28%;
 {
   color: black;
   font-weight: 600;
+}
+@media screen and (max-width:1024px) 
+{
+  .footer .gridFooter
+{
+  display: flex;
+flex-direction: column;
+margin-left: 5%;
+}
+.footer .footerCol1 p
+{
+width: 500px;
+margin-top: 3%;
+}
+.footerCol1 div
+{
+  margin-top: 3%;
+}
+.footerCol2
+{
+  margin-top: 5%;
+}
+.footerCol2 ul
+{
+  margin-top: 3%;
+}
+.footerCol2 ul li
+{
+  margin-top: 2%;
+}
+.finalFooter
+{
+  height: 150px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 5%;
+}
+.finalFooter div
+{
+  margin-top: 1%;
+}
+}
+@media screen and (max-width:585px) 
+{
+  .footer .footerCol1 p
+  {
+  width: 300px;
+  }  
+}
+@media screen and (max-width:340px) 
+{
+  .footer .footerCol1 p
+  {
+  width: 270px;
+  }  
 }
