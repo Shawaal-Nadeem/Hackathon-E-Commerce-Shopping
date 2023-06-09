@@ -3,6 +3,7 @@ import Link from 'next/link'
 import {FaTwitter} from 'react-icons/fa'
 import {FaFacebookF} from 'react-icons/fa'
 import {FaLinkedinIn} from 'react-icons/fa'
+import {AiOutlineCopyrightCircle} from 'react-icons/ai'
 export default function Footer()
 {
     return(
@@ -44,8 +45,10 @@ export default function Footer()
        </div>
        </div>
        <hr className={Style.hr}/>
-       <div className='finalFooter'>
-        
+       <div className={Style.finalFooter}>
+       <div className={Style.copyright}>Copyright &nbsp;<span><AiOutlineCopyrightCircle size={13}/></span>&nbsp; 2023 Dine Market</div>
+       <div><p>Design by.<span> Weird Design Studio</span></p></div>
+       <div><p>Code by.<span><a href='https://github.com/Shawaal-Nadeem'> Shawaal on Github</a></span></p></div>
        </div>
         </footer>
     )
