@@ -3,7 +3,7 @@ import Link from "next/link"
 import Style from './navbar.module.css';
 import { useState } from "react";
 import { AiOutlineSearch } from 'react-icons/ai';
-import { FiShoppingCart } from 'react-icons/fi'
+import { LuShoppingCart } from 'react-icons/lu'
 import {RxHamburgerMenu} from 'react-icons/rx'
 import {IoCloseOutline} from 'react-icons/io5'
 export default function Navbar()
@@ -23,7 +23,7 @@ export default function Navbar()
 <AiOutlineSearch/>
 <input placeholder="What are you looking for" className=" border-solid border-2 border-lime-700"/>
           </div>
-         <Link href={'/shopping-cart'}><button className={Style.cart}><FiShoppingCart size={25}/></button></Link>
+         <Link href={'/shopping-cart'}><button className={Style.cart}><LuShoppingCart size={25}/></button></Link>
          <button className={Style.p} type="button" onClick={()=>update(now === 'now' ? 'mobile' : 'now')}>
           <RxHamburgerMenu size={21}/>
         </button>
@@ -34,14 +34,14 @@ export default function Navbar()
     <div className={Style.mobileview}>
       <div className={Style.main}>
         <div className={Style.subMain}>
-        <button className ={Style.closeBtn} type="button" onClick={()=>update(now === 'now' ? 'mobile' : 'now')}>
+        <button type="button" onClick={()=>update(now === 'now' ? 'mobile' : 'now')}>
           <IoCloseOutline size={27}/>
           </button>
         </div>
       </div>
       <div className={Style.navBtns}>
         <div className={Style.icon}>
-      <Link href={'/shopping-cart'}><button className={Style.cart}><FiShoppingCart size={25}/></button></Link>
+      <Link href={'/shopping-cart'}><button className={Style.cart}><LuShoppingCart size={25}/></button></Link>
       </div>
       <ul>
       <Link href={'/female'}><li onClick={()=>update('now')}>Female</li></Link>
