@@ -77,21 +77,21 @@ border-radius: 8px;
     display: flex;
     justify-content: space-between;
 }
-.home .contents .content2
+.home .contents .content2 ,.home .contents .content3
 {
     margin-top: 7%;
 text-align: center;
 background-color: brown;
 width: 100%;
 }
-.content2 .promoHead
+.content2 .promoHead, .content3 .promoHead
 {
     color: #0062f5;
  font-size: 13px;
  font-weight: 700;
  margin-top: 3%;
 }
-.content2 h2
+.content2 h2, .content3 h2
 {
     margin-top: 5%;
     color: rgb(33, 33, 33);
@@ -173,15 +173,58 @@ font-size: 14px;
     display: flex;
     justify-content: center;
 }
-.card2 div
+.card2 .content, .card3 .content
 {
+    display: flex;
+justify-content: left;
+flex-direction: column;
     width: 300px;
     height: 100px;
-    background-color: aqua;
+    margin-top: 10%;
+}
+.card2 div p, .card3 div p
+{
+    text-align: left;
+    color: rgb(33, 33, 33);
+    font-size: 18px;
+}
+.card2 div img
+{
+margin-top: 10%;
+}
+.card2 .prices, .card3 .prices
+{
+    display: flex;
+    flex-direction: row;
+}
+.cardPrice
+{
+    text-decoration: line-through;
+}
+.cardPrice2
+{
+    font-weight: bold;
+    margin-left: 4.3%;
 }
 .card3
 {
     background-color: rgb(215, 215, 217);
     width: 350px;
     height: 504px;
+    display: flex;
+    justify-content: center;
+}
+.card3 div img
+{
+margin-top: 8%;
+}
+.home .contents .content3
+{
+    background-color: chartreuse;
+}
+.pics
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

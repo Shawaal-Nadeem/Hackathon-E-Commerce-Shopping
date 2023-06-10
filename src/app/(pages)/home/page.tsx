@@ -42,9 +42,40 @@ import Link from 'next/link'
             </div>
           </div>
           <div className={Style.card2}>
-            <div></div>
+            <div className={Style.content}>
+              <p>Flex Sweatshirt</p>
+              <div className={Style.prices}>
+              <p className={Style.cardPrice}>$100.00</p>
+              <p className={Style.cardPrice2}>$75.00</p>
+              </div>
+             <img src='https://hackathon-dine-market.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpromotion2.b5f201ac.png&w=384&q=75' alt='Loading...'></img>
+            </div>
           </div>
-          <div className={Style.card3}></div>
+          <div className={Style.card3}>
+            <div className={Style.content}>
+              <p>Flex Push Button Bomber</p>
+              <div className={Style.prices}>
+              <p className={Style.cardPrice}>$225.00</p>
+              <p className={Style.cardPrice2}>$190.00</p>
+              </div>
+             <img src='https://hackathon-dine-market.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpromotion3.798fa92b.png&w=384&q=75' alt='Loading...'></img>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={Style.content3}>
+      <p className={Style.promoHead}>PRODUCTS</p>
+        <h2>Check What We Have</h2>
+        <div className={Style.pics}>
+          <div>
+          <img src='' alt='Loading...'></img>
+          </div>
+          <div>
+          <img src='' alt='Loading...'></img>
+          </div>
+          <div>
+          <img src='' alt='Loading...'></img>
+          </div>
         </div>
       </div>
       </div>
