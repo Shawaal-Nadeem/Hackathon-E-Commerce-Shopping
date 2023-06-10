@@ -4,7 +4,7 @@ import Link from 'next/link'
  const Home = () => {
   return (
     <div className={Style.home}>
-      <div className={Style.content}>
+      <div className={Style.content1}>
       <div className={Style.col1}>
       <button className={Style.saleBtn}>Sale 70%</button>
       <h1>An Industrial Take on Streetwear</h1>
