@@ -4,6 +4,7 @@ import Link from 'next/link'
  const Home = () => {
   return (
     <div className={Style.home}>
+      <div className={Style.contents}>
       <div className={Style.content1}>
       <div className={Style.col1}>
       <button className={Style.saleBtn}>Sale 70%</button>
@@ -21,6 +22,31 @@ import Link from 'next/link'
         </div>
       </div>
     <div className={Style.col2}><img src='/assets/images/homepic.png' alt='Loading...'></img></div>
+      </div>
+      <div className={Style.content2}>
+        <p className={Style.promoHead}>PROMOTIONS</p>
+        <h2>Our Promotions Events</h2>
+        <div className={Style.promoPics}>
+          <div>
+            <div className={Style.card1}>
+            <div>
+            <h4>GET UP TO 60%</h4>
+            <p>For the summer season</p>
+            </div>
+            <img src='https://hackathon-dine-market.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpromotion1.6f776995.png&w=384&q=75' alt='Loading...'></img>
+            </div>
+            <div className={Style.subCard1}>
+              <h2>GET 30% Off</h2>
+              <p>USE PROMO CODE</p>
+              <button>DINEWEEKENDSALE</button>
+            </div>
+          </div>
+          <div className={Style.card2}>
+            <div></div>
+          </div>
+          <div className={Style.card3}></div>
+        </div>
+      </div>
       </div>
     </div>
   )
