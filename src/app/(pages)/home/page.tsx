@@ -84,6 +84,11 @@ import Link from 'next/link'
           </div>
         </div>
       </div>
+      <div className={Style.content4}>
+        <div className={Style.head}>
+       <h2>Unique and Authentic Vintage Designer Jewellery</h2>
+       </div>
+      </div>
       </div>
     </div>
   )
