@@ -224,7 +224,42 @@ margin-top: 8%;
 }
 .pics
 {
+    margin-top: 5%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+.pics div
+{
+    transition: transform 0.3s ease;
+}
+.pics div:hover
+{
+    transform: scale(1.1);
+}
+.pic1 img
+{
+    height: 400px;
+    width: 370px;
+}
+.pic1 .name, .pic2 .name, .pic3 .name
+{
+    text-align: start;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(33, 33, 33);
+    margin-top: 3.5%;
+}
+.pic1 .price, .pic2 .price, .pic3 .price
+{
+    text-align: start;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(33, 33, 33);
+    margin-top: 2%;
+}
+.pic2 img, .pic3 img
+{
+    height: 400px;
+    width: 340px;
 }

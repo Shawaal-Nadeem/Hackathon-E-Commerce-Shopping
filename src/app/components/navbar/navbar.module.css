@@ -17,6 +17,7 @@
   justify-content: space-around;
   background-color:white;
   height: 100px;
+  z-index: 1;
 }
 .header nav ul
 {

@@ -67,14 +67,20 @@ import Link from 'next/link'
       <p className={Style.promoHead}>PRODUCTS</p>
         <h2>Check What We Have</h2>
         <div className={Style.pics}>
-          <div>
-          <img src='' alt='Loading...'></img>
+          <div className={Style.pic1}>
+          <img src='/assets/images/black.jpg' alt='Loading...'></img>
+          <p className={Style.name}>Brushed Raglan Sweatshirt</p>
+          <p className={Style.price}>$195</p>
           </div>
-          <div>
-          <img src='' alt='Loading...'></img>
+          <div className={Style.pic2}>
+          <img src='/assets/images/skin.jpg' alt='Loading...'></img>
+          <p className={Style.name}>Cameryn Sash Tie Dress</p>
+          <p className={Style.price}>$545</p>
           </div>
-          <div>
-          <img src='' alt='Loading...'></img>
+          <div className={Style.pic3}>
+          <img src='/assets/images/coat.jpg' alt='Loading...'></img>
+          <p className={Style.name}>Flex Sweatshirt</p>
+          <p className={Style.price}>$175</p>
           </div>
         </div>
       </div>
