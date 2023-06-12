@@ -91,6 +91,26 @@ import Link from 'next/link'
        <div className={Style.content}>
 <div className={Style.col1}>
   <h1>Different from others</h1>
+  <div className={Style.row1}>
+    <div>
+      <h4>Using Good Quality Materials</h4>
+      <p>Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
+    </div>
+    <div>
+      <h4>Using Good Quality Materials</h4>
+      <p>Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+  <div className={Style.row2}>
+    <div>
+      <h4>Using Good Quality Materials</h4>
+      <p>Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
+    </div>
+    <div>
+      <h4>Using Good Quality Materials</h4>
+      <p>Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
+    </div>
+  </div>
 </div>
 <div className={Style.col2}>
   <div><img src='/assets/images/princess.jpg'></img></div>

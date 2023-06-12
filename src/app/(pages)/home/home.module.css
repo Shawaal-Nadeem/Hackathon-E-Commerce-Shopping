@@ -277,7 +277,7 @@ margin-top: 8%;
 }
 .content4 h2
 {
-    color: rgb(33, 33, 33);
+    color: rgb(57, 73, 104);
     font-size: 45px;
     font-weight: bolder;
     width: 490px;
@@ -287,19 +287,51 @@ margin-top: 8%;
     background-color: rgb(248, 250, 253);
     padding-top: 7%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+}
+.content4 .content .col1, .content4 .content .col2
+{
+    margin-bottom: 3.5%;
 }
 .content4 .content .col1
 {
     margin-left: 4%;
-    width: 350px;
+    width: 505px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .content4 .content .col1 h1
 {
     color: rgb(229, 231, 235);
-    font-size: 70px;
+    font-size: 85px;
     font-weight: 900;
+    position: absolute;
+    width: 280px;
+}
+.content4 .content .col1 div
+{
+    z-index: 1;
+    position: relative;
+}
+.row1 , .row2
+{
+    display: flex;
+    justify-content: space-between;
+}
+.row1 div ,.row2 div
+{
+    width: 225px;
+    color: rgb(30, 38, 54);
+}
+.row1 div h4, .row2 div h4
+{
+    font-weight: bold;
+}
+.row1 div p, .row2 div p
+{
+    margin-top: 4%;
+    font-weight: 300;
 }
 .content4 .content .col2
 {
@@ -315,6 +347,9 @@ margin-top: 8%;
 .content4 .content .col2 div
 {
     margin-left:5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .content4 .content .col2 div p
 {
