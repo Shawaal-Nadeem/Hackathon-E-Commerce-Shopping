@@ -282,3 +282,51 @@ margin-top: 8%;
     font-weight: bolder;
     width: 490px;
 }
+.content4 .content
+{
+    background-color: rgb(248, 250, 253);
+    padding-top: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content4 .content .col1
+{
+    margin-left: 4%;
+    width: 350px;
+}
+.content4 .content .col1 h1
+{
+    color: rgb(229, 231, 235);
+    font-size: 70px;
+    font-weight: 900;
+}
+.content4 .content .col2
+{
+    margin-right: 4%;
+    display: flex;
+    justify-content: space-between;
+}
+.content4 .content .col2 div img
+{
+    width: 350px;
+    height: 370px;
+}
+.content4 .content .col2 div
+{
+    margin-left:5%;
+}
+.content4 .content .col2 div p
+{
+    width: 230px;
+    font-weight: 300;
+    display: block;
+    box-sizing: border-box;
+}
+.content4 .content .col2 div button
+{
+    background-color: rgb(33, 33, 33);
+    color: white;
+    width: 123px;
+    height: 60px;
+}

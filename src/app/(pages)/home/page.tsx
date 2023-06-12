@@ -88,6 +88,18 @@ import Link from 'next/link'
         <div className={Style.head}>
        <h2>Unique and Authentic Vintage Designer Jewellery</h2>
        </div>
+       <div className={Style.content}>
+<div className={Style.col1}>
+  <h1>Different from others</h1>
+</div>
+<div className={Style.col2}>
+  <div><img src='/assets/images/princess.jpg'></img></div>
+  <div>
+    <p>This piece is ethically crafted in our small family-owned workshop in Peru with unmatched attention to detail and care. The Natural color is the actual natural color of the fiber, undyed and 100% traceable.</p>
+    <button>See All Product</button>
+    </div>
+</div>
+       </div>
       </div>
       </div>
     </div>
