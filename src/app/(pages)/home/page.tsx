@@ -103,11 +103,11 @@ import Link from 'next/link'
   </div>
   <div className={Style.row2}>
     <div>
-      <h4>Using Good Quality Materials</h4>
+      <h4>Modern Fashion Design</h4>
       <p>Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
     </div>
     <div>
-      <h4>Using Good Quality Materials</h4>
+      <h4>Discount for Bulk Orders</h4>
       <p>Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
     </div>
   </div>
@@ -116,10 +116,21 @@ import Link from 'next/link'
   <div><img src='/assets/images/princess.jpg'></img></div>
   <div>
     <p>This piece is ethically crafted in our small family-owned workshop in Peru with unmatched attention to detail and care. The Natural color is the actual natural color of the fiber, undyed and 100% traceable.</p>
-    <button>See All Product</button>
+    <Link href={'/all_products'}><button>See All Product</button></Link>
     </div>
 </div>
        </div>
+      </div>
+      <div className={Style.content5}>
+      <h1>Newsletter</h1>
+        <div>
+          <h4>Subscribe Our Newsletter</h4>
+          <p>Get the latest information and promo offers directly</p>
+          <div className={Style.email}>
+            <input placeholder='Email' type='email' size={25}></input>
+            <button>Get Started</button>
+          </div>
+        </div>
       </div>
       </div>
     </div>
