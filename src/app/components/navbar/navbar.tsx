@@ -21,7 +21,7 @@ export default function Navbar()
           </ul>
           <div className={Style.input}>
 <AiOutlineSearch/>
-<input placeholder="What are you looking for" className=" border-solid border-2 border-lime-700"/>
+<input placeholder="What are you looking for" />
           </div>
          <Link href={'/shopping-cart'}><button className={Style.cart}><LuShoppingCart size={25}/></button></Link>
          <button className={Style.p} type="button" onClick={()=>update(now === 'now' ? 'mobile' : 'now')}>

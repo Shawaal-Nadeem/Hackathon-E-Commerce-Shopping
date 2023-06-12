@@ -30,6 +30,27 @@
   font-weight: 500;
   margin-left: 35px;
 }
+.input
+{
+  display: flex;
+  align-items: center;
+  border: 1.7px solid rgb(223, 226, 230);
+  border-radius: 6px;
+  width: 240px;
+  height: 30px;
+  color: rgb(128, 128, 128);
+}
+.input input
+{
+  padding-left: 7px;
+  font-size: 14px;
+  width: 200px;
+  height: 18px;
+}
+.input input:focus
+{
+  outline: none;
+}
 .header nav .cart,.navBtns .cart
 {
   background-color: rgb(243, 244, 246);
