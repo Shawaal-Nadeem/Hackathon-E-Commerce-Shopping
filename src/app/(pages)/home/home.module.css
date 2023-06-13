@@ -92,7 +92,6 @@ border-radius: 8px;
 {
     margin-top: 7%;
 text-align: center;
-background-color: brown;
 width: 100%;
 }
 .content2 .promoHead, .content3 .promoHead
@@ -119,7 +118,6 @@ width: 100%;
 .promoPics .col1
 {
     width: 30%;
-    background-color: aqua;
 }
 .promoPics .card1
 {
@@ -148,6 +146,11 @@ width: 100%;
     color: rgb(33, 33, 33);
     font-size: 17px;
     width: 140px;
+}
+.promoPics .card1 .card1Pic
+{
+    display: flex;
+    align-self: flex-end;
 }
 .subCard1
 {
@@ -193,7 +196,6 @@ font-size: 14px;
     display: flex;
     justify-content: space-around;
     width: 60%;
-    background-color: blueviolet;
 }
 .card2
 {
@@ -201,7 +203,9 @@ font-size: 14px;
     width: 350px;
     height: 504px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .card2 .content, .card3 .content
 {
@@ -210,17 +214,13 @@ justify-content: left;
 flex-direction: column;
     width: 300px;
     height: 100px;
-    margin-top: 10%;
+    margin-top: 7%;
 }
 .card2 div p, .card3 div p
 {
     text-align: left;
     color: rgb(33, 33, 33);
     font-size: 18px;
-}
-.card2 div img
-{
-margin-top: 10%;
 }
 .card2 .prices, .card3 .prices
 {
@@ -242,7 +242,9 @@ margin-top: 10%;
     width: 350px;
     height: 504px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .card3 div img
 {
@@ -502,7 +504,9 @@ margin-top: 8%;
 }
 .card2 .content, .card3 .content
 {
-    margin-top: 7.6%;
+    width: 100%;   
+    margin-top: 7%;
+    margin-left: 4%;
 }
 }
 @media screen and (max-width:1024px) 
@@ -524,6 +528,24 @@ margin-top: 8%;
 .home .contents .content1 .col2
 {
     display: none;
+}
+}
+@media screen and (max-width:800px) 
+{
+.promoPics .col2
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.card2, .card3
+{
+    width: 100%;
+}
+.card3
+{
+    margin-top: 2.5%;
 }
 }
 @media screen and (max-width:640px)
@@ -552,5 +574,24 @@ margin-top: 8%;
 .logoPics .logoRow2
 {
     margin-top: 3.5%;
+}
+.promoPics .card1
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.card1 .content
+{
+    margin-top: 5%;
+}
+.card2
+{
+    height: 450px;
+}
+.card3
+{
+    height: 467px;
 }
 }

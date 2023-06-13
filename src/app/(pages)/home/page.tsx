@@ -33,11 +33,11 @@ import Link from 'next/link'
         <div className={Style.promoPics}>
           <div className={Style.col1}>
             <div className={Style.card1}>
-            <div>
+            <div className={Style.content}>
             <h4>GET UP TO 60%</h4>
             <p>For the summer season</p>
             </div>
-            <img src='https://hackathon-dine-market.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpromotion1.6f776995.png&w=384&q=75' alt='Loading...'></img>
+           <div className={Style.card1Pic}><img src='https://hackathon-dine-market.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpromotion1.6f776995.png&w=384&q=75' alt='Loading...'></img></div> 
             </div>
             <div className={Style.subCard1}>
               <div>
@@ -50,23 +50,27 @@ import Link from 'next/link'
           <div className={Style.col2}>
           <div className={Style.card2}>
             <div className={Style.content}>
+              <div>
               <p>Flex Sweatshirt</p>
               <div className={Style.prices}>
               <p className={Style.cardPrice}>$100.00</p>
               <p className={Style.cardPrice2}>$75.00</p>
               </div>
-             <img src='https://hackathon-dine-market.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpromotion2.b5f201ac.png&w=384&q=75' alt='Loading...'></img>
+              </div>
             </div>
+            <div className={Style.cardPic}><img src='https://hackathon-dine-market.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpromotion2.b5f201ac.png&w=384&q=75' alt='Loading...'></img></div>
           </div>
           <div className={Style.card3}>
             <div className={Style.content}>
+              <div>
               <p>Flex Push Button Bomber</p>
               <div className={Style.prices}>
               <p className={Style.cardPrice}>$225.00</p>
               <p className={Style.cardPrice2}>$190.00</p>
               </div>
-             <img src='https://hackathon-dine-market.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpromotion3.798fa92b.png&w=384&q=75' alt='Loading...'></img>
+              </div>
             </div>
+            <div className={Style.cardPic}><img src='https://hackathon-dine-market.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpromotion3.798fa92b.png&w=384&q=75' alt='Loading...'></img></div>
           </div>
           </div>
         </div>
