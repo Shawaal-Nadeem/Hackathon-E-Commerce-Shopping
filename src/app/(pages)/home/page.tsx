@@ -15,10 +15,14 @@ import Link from 'next/link'
         Start Shopping
         </button></Link>
         <div className={Style.logoPics}>
+          <div className={Style.logoRow1}>
           <img src='https://hackathon-dine-market.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero1.66abddd4.png&w=96&q=75' alt='Loading...'></img>
           <img src='https://hackathon-dine-market.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero2.247cd605.png&w=96&q=75' alt='Loading...'></img>
+          </div>
+          <div className={Style.logoRow2}>
           <img src='https://hackathon-dine-market.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero3.6076521d.png&w=96&q=75' alt='Loading...'></img>
           <img src='https://hackathon-dine-market.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero4.0489f1fc.png&w=96&q=75' alt='Loading...'></img>
+          </div>
         </div>
       </div>
     <div className={Style.col2}><img src='/assets/images/homepic.png' alt='Loading...'></img></div>
@@ -27,7 +31,7 @@ import Link from 'next/link'
         <p className={Style.promoHead}>PROMOTIONS</p>
         <h2>Our Promotions Events</h2>
         <div className={Style.promoPics}>
-          <div>
+          <div className={Style.col1}>
             <div className={Style.card1}>
             <div>
             <h4>GET UP TO 60%</h4>
@@ -36,11 +40,14 @@ import Link from 'next/link'
             <img src='https://hackathon-dine-market.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpromotion1.6f776995.png&w=384&q=75' alt='Loading...'></img>
             </div>
             <div className={Style.subCard1}>
+              <div>
               <h2>GET 30% Off</h2>
               <p>USE PROMO CODE</p>
               <button>DINEWEEKENDSALE</button>
+              </div>
             </div>
           </div>
+          <div className={Style.col2}>
           <div className={Style.card2}>
             <div className={Style.content}>
               <p>Flex Sweatshirt</p>
@@ -61,9 +68,10 @@ import Link from 'next/link'
              <img src='https://hackathon-dine-market.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpromotion3.798fa92b.png&w=384&q=75' alt='Loading...'></img>
             </div>
           </div>
+          </div>
         </div>
       </div>
-      <div className={Style.content3}>
+      {/* <div className={Style.content3}>
       <p className={Style.promoHead}>PRODUCTS</p>
         <h2>Check What We Have</h2>
         <div className={Style.pics}>
@@ -83,8 +91,8 @@ import Link from 'next/link'
           <p className={Style.price}>$175</p>
           </div>
         </div>
-      </div>
-      <div className={Style.content4}>
+      </div> */}
+      {/* <div className={Style.content4}>
         <div className={Style.head}>
        <h2>Unique and Authentic Vintage Designer Jewellery</h2>
        </div>
@@ -120,8 +128,8 @@ import Link from 'next/link'
     </div>
 </div>
        </div>
-      </div>
-      <div className={Style.content5}>
+      </div> */}
+      {/* <div className={Style.content5}>
       <h1>Newsletter</h1>
         <div>
           <h4>Subscribe Our Newsletter</h4>
@@ -131,7 +139,7 @@ import Link from 'next/link'
             <button>Get Started</button>
           </div>
         </div>
-      </div>
+      </div> */}
       </div>
     </div>
   )
