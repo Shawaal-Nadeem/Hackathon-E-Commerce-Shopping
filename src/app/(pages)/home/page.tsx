@@ -75,7 +75,7 @@ import Link from 'next/link'
           </div>
         </div>
       </div>
-      {/* <div className={Style.content3}>
+      <div className={Style.content3}>
       <p className={Style.promoHead}>PRODUCTS</p>
         <h2>Check What We Have</h2>
         <div className={Style.pics}>
@@ -95,7 +95,7 @@ import Link from 'next/link'
           <p className={Style.price}>$175</p>
           </div>
         </div>
-      </div> */}
+      </div>
       {/* <div className={Style.content4}>
         <div className={Style.head}>
        <h2>Unique and Authentic Vintage Designer Jewellery</h2>

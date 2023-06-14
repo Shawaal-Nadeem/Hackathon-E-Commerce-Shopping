@@ -252,7 +252,7 @@ margin-top: 8%;
 }
 .home .contents .content3
 {
-    background-color: chartreuse;
+    color: rgb(33, 33, 33);
 }
 .pics
 {
@@ -279,7 +279,6 @@ margin-top: 8%;
     text-align: start;
     font-size: 18px;
     font-weight: 600;
-    color: rgb(33, 33, 33);
     margin-top: 3.5%;
 }
 .pic1 .price, .pic2 .price, .pic3 .price
@@ -287,7 +286,6 @@ margin-top: 8%;
     text-align: start;
     font-size: 18px;
     font-weight: 600;
-    color: rgb(33, 33, 33);
     margin-top: 2%;
 }
 .pic2 img, .pic3 img
@@ -508,6 +506,14 @@ margin-top: 8%;
     margin-top: 7%;
     margin-left: 4%;
 }
+.content3 .pics 
+{
+    justify-content: space-between;
+}
+.pic3
+{
+    display: none;
+}
 }
 @media screen and (max-width:1024px) 
 {
@@ -546,6 +552,14 @@ margin-top: 8%;
 .card3
 {
     margin-top: 2.5%;
+}
+.content3 .pics 
+{
+    justify-content: center;
+}
+.pic2
+{
+    display: none;
 }
 }
 @media screen and (max-width:640px)
@@ -593,5 +607,10 @@ margin-top: 8%;
 .card3
 {
     height: 467px;
+}
+.pic1 img
+{
+    height: 370px;
+    width: 350px;
 }
 }
