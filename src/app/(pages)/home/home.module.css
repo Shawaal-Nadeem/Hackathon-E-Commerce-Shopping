@@ -295,7 +295,6 @@ margin-top: 8%;
 }
 .content4
 {
-    background-color: cadetblue;
     width: 100%;
     margin-top: 5%;
 }
@@ -380,14 +379,14 @@ margin-top: 8%;
     flex-direction: column;
     justify-content: space-between;
 }
-.content4 .content .col2 div p
+.content4 .content .col2 .col2Content p
 {
     width: 230px;
     font-weight: 300;
     display: block;
     box-sizing: border-box;
 }
-.content4 .content .col2 div button
+.content4 .content .col2 .col2Content button
 {
     background-color: rgb(33, 33, 33);
     color: white;
@@ -513,6 +512,55 @@ margin-top: 8%;
 .pic3
 {
     display: none;
+}
+.content4 .head
+{
+    justify-content: center;
+}
+.content4 h2
+{
+    color: rgb(57, 73, 104);
+    font-size: 45px;
+    font-weight: bolder;
+    width: 80%;
+}
+.content4 .content
+{
+    flex-direction: column;
+}
+.content4 .content .col1
+{
+    width: 70%;
+}
+.content4 .content .col1 h1
+{
+    width: 70%;
+}
+.content4 .content .col1 .row2
+{
+    margin-top: 5%;
+}
+
+.content4 .content .col2 .col2Content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content4 .content .col2 div img
+{
+    width: 790px;
+    height: 370px;
+}
+.content4 .content .col2 .col2Content p
+{
+    width: 85%;
+}
+.content4 .content .col2 .col2Content button
+{
+    margin-top: 3%;
+    width: 280px;
+    height: 50px;
 }
 }
 @media screen and (max-width:1024px) 

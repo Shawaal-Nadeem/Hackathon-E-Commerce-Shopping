@@ -96,7 +96,7 @@ import Link from 'next/link'
           </div>
         </div>
       </div>
-      {/* <div className={Style.content4}>
+      <div className={Style.content4}>
         <div className={Style.head}>
        <h2>Unique and Authentic Vintage Designer Jewellery</h2>
        </div>
@@ -126,13 +126,13 @@ import Link from 'next/link'
 </div>
 <div className={Style.col2}>
   <div><img src='/assets/images/princess.jpg'></img></div>
-  <div>
+  <div className={Style.col2Content}>
     <p>This piece is ethically crafted in our small family-owned workshop in Peru with unmatched attention to detail and care. The Natural color is the actual natural color of the fiber, undyed and 100% traceable.</p>
     <Link href={'/all_products'}><button>See All Product</button></Link>
     </div>
 </div>
        </div>
-      </div> */}
+      </div>
       {/* <div className={Style.content5}>
       <h1>Newsletter</h1>
         <div>
