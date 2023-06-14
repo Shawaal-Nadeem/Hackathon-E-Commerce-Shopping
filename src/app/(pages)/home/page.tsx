@@ -125,7 +125,7 @@ import Link from 'next/link'
   </div>
 </div>
 <div className={Style.col2}>
-  <div><img src='/assets/images/princess.jpg'></img></div>
+  <div className={Style.col2Pic}><img src='/assets/images/princess.jpg'></img></div>
   <div className={Style.col2Content}>
     <p>This piece is ethically crafted in our small family-owned workshop in Peru with unmatched attention to detail and care. The Natural color is the actual natural color of the fiber, undyed and 100% traceable.</p>
     <Link href={'/all_products'}><button>See All Product</button></Link>

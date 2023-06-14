@@ -540,27 +540,48 @@ margin-top: 8%;
 {
     margin-top: 5%;
 }
+.content4 .content .col2
+{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin-left: 4%;
+}
+.content4 .content .col2 div
+{
+    margin-left:0%;
+}
+.content4 .content .col2 .col2Pic
+{
+    width: 30%;
+}
 
 .content4 .content .col2 .col2Content
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-sizing: border-box;
+    width: 45%;
 }
 .content4 .content .col2 div img
 {
-    width: 790px;
-    height: 370px;
+    width: 340px;
+    height: 100%;
+}
+.content4 .content .col2 .col2Content
+{
+    margin-left: 3%;
 }
 .content4 .content .col2 .col2Content p
 {
-    width: 85%;
+    width: 100%;
 }
 .content4 .content .col2 .col2Content button
 {
     margin-top: 3%;
     width: 280px;
-    height: 50px;
+    height: 43px;
 }
 }
 @media screen and (max-width:1024px) 
