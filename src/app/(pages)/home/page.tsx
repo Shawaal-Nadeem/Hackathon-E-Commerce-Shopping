@@ -139,7 +139,7 @@ import Link from 'next/link'
           <h4>Subscribe Our Newsletter</h4>
           <p>Get the latest information and promo offers directly</p>
           <div className={Style.email}>
-            <input placeholder='Email' type='email' size={25}></input>
+            <input placeholder='Email' type='email' size={25} maxLength={30}></input>
             <button>Get Started</button>
           </div>
         </div>
