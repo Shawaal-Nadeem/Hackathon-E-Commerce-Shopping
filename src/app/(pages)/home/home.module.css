@@ -519,9 +519,6 @@ margin-top: 8%;
 }
 .content4 h2
 {
-    color: rgb(57, 73, 104);
-    font-size: 45px;
-    font-weight: bolder;
     width: 80%;
 }
 .content4 .content
@@ -629,6 +626,73 @@ margin-top: 8%;
 .pic2
 {
     display: none;
+}
+}
+@media screen and (max-width:760px)
+{
+.content4 .content .col1, .content4 .content .col2
+{
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+.content4 .content .col1 .row1 , .content4 .content .col1 .row2
+{
+    align-items: center;
+    flex-direction: column;
+}
+.content4 .content .col1 h1
+{
+    width: 80%;
+    font-size: 70px;
+    font-weight: 700;
+}
+.row1 div ,.row2 div
+{
+    width: 92%;
+}
+.row1 .row1Head2, .row2 .row2Head2
+{
+    margin-top: 5%;
+}
+.row1 div p, .row2 div p
+{
+    margin-top: 1%;
+}
+
+.content4 .content .col2
+{
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0%;
+}
+.content4 .content .col2 .col2Pic
+{
+    align-items: center;
+    width: 100%;
+}
+.content4 .content .col2 .col2Pic img
+{
+    height: 400px;
+    width: 370px;
+}
+.content4 .content .col2 .col2Content
+{
+    align-items: start;
+    margin-top: 5%;
+    width: 80%;
+    margin-left: 0%;
+}
+.content4 .content .col2 .col2Content p
+{
+    width: 100%;
+    text-align: start;
+}
+.content4 .content .col2 .col2Content button
+{
+    margin-top: 8%;
+    width: 180px;
+    height: 40px;
 }
 }
 @media screen and (max-width:640px)

@@ -108,7 +108,7 @@ import Link from 'next/link'
       <h4>Using Good Quality Materials</h4>
       <p>Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
     </div>
-    <div>
+    <div className={Style.row1Head2}>
       <h4>Using Good Quality Materials</h4>
       <p>Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
     </div>
@@ -118,7 +118,7 @@ import Link from 'next/link'
       <h4>Modern Fashion Design</h4>
       <p>Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
     </div>
-    <div>
+    <div className={Style.row2Head2}>
       <h4>Discount for Bulk Orders</h4>
       <p>Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
     </div>
