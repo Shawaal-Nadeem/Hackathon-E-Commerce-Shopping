@@ -133,9 +133,9 @@ import Link from 'next/link'
 </div>
        </div>
       </div>
-      {/* <div className={Style.content5}>
+      <div className={Style.content5}>
       <h1>Newsletter</h1>
-        <div>
+        <div className={Style.content}>
           <h4>Subscribe Our Newsletter</h4>
           <p>Get the latest information and promo offers directly</p>
           <div className={Style.email}>
@@ -143,7 +143,7 @@ import Link from 'next/link'
             <button>Get Started</button>
           </div>
         </div>
-      </div> */}
+      </div>
       </div>
     </div>
   )

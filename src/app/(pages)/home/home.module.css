@@ -398,9 +398,7 @@ margin-top: 8%;
     display: flex;
     justify-content: center;
     margin-top: 5%;
-    background-color: darkkhaki;
     width: 100%;
-    margin-bottom: 10%;
 }
 
 .content5 h1
@@ -432,7 +430,6 @@ margin-top: 8%;
 .content5 div .email
 {
     display: flex;
-    
 }
 .content5 div .email input
 {
@@ -651,12 +648,17 @@ margin-top: 8%;
 {
     width: 92%;
 }
+.row1 div h4, .row2 div h4
+{
+    font-size: 18px;
+}
 .row1 .row1Head2, .row2 .row2Head2
 {
     margin-top: 5%;
 }
 .row1 div p, .row2 div p
 {
+    font-size: 16px;
     margin-top: 1%;
 }
 
@@ -706,6 +708,36 @@ margin-top: 8%;
     width: 200px;
     font-size: 14px;
 }
+.content5
+{
+    margin-bottom: 18%;
+}
+.content5 h1
+{
+    width: 100%;
+    font-size: 75px;
+    font-weight: 800;
+    text-align: center;
+}
+.content5 div h4
+{
+    font-size: 30px;
+}
+.content5 div .email
+{
+    align-items: center;
+    flex-direction: column;
+}
+.content5 div .email input
+{
+   
+    width: 365px;
+}
+.content5 div .email button
+{
+    margin-left: 0%;
+    margin-top: 3%;
+}
 } 
 @media screen and (max-width:500px)
 {
@@ -745,5 +777,53 @@ margin-top: 8%;
 {
     height: 370px;
     width: 350px;
+}
+.content5
+{
+    margin-bottom: 18%;
+}
+.content5 .content
+{
+    width: 90%;
+}
+.content5 h1
+{
+    font-size: 65px;
+    font-weight: 700;
+}
+.content5 div h4
+{
+    font-size: 30px;
+}
+.content5 div .email
+{
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+.content5 div .email input
+{
+    width: 365px;
+}
+.content5 div .email button
+{
+    margin-left: 0%;
+    margin-top: 3%;
+}
+}
+@media screen and (max-width:465px)
+{
+.content5
+{
+    margin-bottom: 45%;
+}
+.content5 h1
+{
+    font-size: 55px;
+    font-weight: 700;
+}
+.content5 div .email input
+{  
+    width: 330px;
 }
 }
