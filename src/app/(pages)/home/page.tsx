@@ -90,7 +90,7 @@ import Link from 'next/link'
           <p className={Style.price}>$545</p>
           </div>
           <div className={Style.pic3}>
-          <img src='/assets/images/coat.jpg' alt='Loading...'></img>
+          <img src='/assets/images/hat.jpg' alt='Loading...'></img>
           <p className={Style.name}>Flex Sweatshirt</p>
           <p className={Style.price}>$175</p>
           </div>
