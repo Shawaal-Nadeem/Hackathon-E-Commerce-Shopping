@@ -7,7 +7,7 @@ import Image from 'next/image';
 function femaleData(data:any)
 {
 return(
-  <div key={data.id} className='eachCard'>
+  <div key={data.name} className='eachCard'>
     <Image src={data.image} width={270} height={270} alt={data.name}/>
     <h1 className='cardName'>{data.name}</h1>
     <h3 className='clothType'>{data.cloth_Type}</h3>

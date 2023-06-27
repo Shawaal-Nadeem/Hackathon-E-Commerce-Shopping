@@ -15,6 +15,7 @@
 }
 .productCards
 {
+    margin-top: 4%;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -22,7 +23,7 @@
 }
 .eachCard
 {
-    margin-top: 3%;
+    margin-top: 0.5%;
 }
 .cardName,.priceCard
 {
