@@ -1,4 +1,4 @@
-import products from "../../utils/mock";
+import products from "@/app/utils/mock";
 
 function productsData(data:any)
 {
