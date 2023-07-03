@@ -34,7 +34,7 @@ const products = [
     slug: "Flex-Push-Button-Bomber",
     category: "male",
     price: "$224",
-    cloth_Type: "$Sweater",
+    cloth_Type: "$Jackets",
     image:
       "https://hackathon-dine-market.vercel.app/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fzwnaaffj%2Fproduction%2F4e2ed6a9eaa6e1413843e53f3113ccfd2104c301-278x296.png%3Fw%3D400%26fit%3Dmax%26auto%3Dformat&w=640&q=75",
   },
