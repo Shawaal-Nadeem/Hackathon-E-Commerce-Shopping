@@ -48,7 +48,7 @@ export default function Footer()
        <div className={Style.finalFooter}>
        <div className={Style.copyright}>Copyright &nbsp;<span><AiOutlineCopyrightCircle size={13}/></span>&nbsp; 2023 Dine Market</div>
        <div><p>Design by.<span> Weird Design Studio</span></p></div>
-       <div><p>Code by.<span><a href='https://github.com/Shawaal-Nadeem'> Shawaal on Github</a></span></p></div>
+       <div><p>Code by.<span className={Style.code}><a href='https://github.com/Shawaal-Nadeem'> Shawaal on Github</a></span></p></div>
        </div>
         </footer>
     )

@@ -76,6 +76,10 @@ margin-top: 28%;
   color: black;
   font-weight: 600;
 }
+.finalFooter div p .code:hover
+{
+text-decoration: underline;
+}
 @media screen and (max-width:1024px) 
 {
   .footer .gridFooter
