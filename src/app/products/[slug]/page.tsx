@@ -13,7 +13,7 @@ export async function generateStaticParams()
     return products.map(productsData)
 }
 
-type ProductDetails=
+type productDetails=
 {
     params:
     {
@@ -21,7 +21,7 @@ type ProductDetails=
     }
 }
 
-export default function productDetails({params}:ProductDetails)
+export default function ProductDetails({params}:productDetails)
 {
     const data_Product=products.find(function search(slugVal){return slugVal.slug==params.slug}) as any;
 
