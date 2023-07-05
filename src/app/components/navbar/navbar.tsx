@@ -20,7 +20,7 @@ export default function Navbar()
            <Link href={'/all_products'}><li>All Products</li></Link>
           </ul>
           <div className={Style.input}>
-<AiOutlineSearch/>
+<AiOutlineSearch className={Style.searchIcon}/>
 <input placeholder="What are you looking for" maxLength={25} />
           </div>
          <Link href={'/shopping-cart'}><button className={Style.cart}><LuShoppingCart size={25}/></button></Link>

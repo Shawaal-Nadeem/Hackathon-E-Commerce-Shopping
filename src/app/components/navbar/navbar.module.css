@@ -30,6 +30,10 @@
   font-weight: 500;
   margin-left: 35px;
 }
+.searchIcon
+{
+  margin-left: 3%;
+}
 .input
 {
   display: flex;
