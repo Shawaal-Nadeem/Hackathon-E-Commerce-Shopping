@@ -6,7 +6,7 @@
 .main .subMain
 {
     width: 85%;
-    /* background-color: aqua; */
+    margin-top: 5%;
     display: flex;
     gap: 50px;
 }
@@ -40,4 +40,67 @@
     font-weight: 600;
     color: black;
     font-size: 14px;
+    margin-top: 40px;
+}
+.sizeBtns
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 4%;
+}
+.sizeBtns button,.quantitySection button
+{
+    background-color: rgb(229, 231, 235);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.quantitySection,.totalSection
+{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 8%;
+}
+.quantitySection p,.totalSection p
+{
+margin-top: 0px;
+}
+.quantitySection button
+{
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    font-weight: 300;
+}
+.totalSection h5
+{
+    font-weight: 600;
+    font-size: 17px;
+}
+.cartBtn
+{
+    margin-top: 8%;
+}
+.shopingBtn
+{
+    width: 180px;
+    height: 50px;
+    background-color: rgb(33, 33, 33);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+.shopingBtn:hover
+{
+    background-color: rgb(39, 46, 63);
 }
