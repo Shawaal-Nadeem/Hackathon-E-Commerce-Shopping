@@ -6,9 +6,37 @@ import { AiOutlineSearch } from 'react-icons/ai';
 import { LuShoppingCart } from 'react-icons/lu'
 import {RxHamburgerMenu} from 'react-icons/rx'
 import {IoCloseOutline} from 'react-icons/io5'
+import {useRouter} from 'next/navigation'
+
 export default function Navbar()
 {
+  let a='hjdbdbn';
+  
   const [now,update]=useState('now');
+  const router=useRouter();
+  const [value,setValue]=useState('What are you looking for');
+
+if(value.toLowerCase()==='home')
+{
+router.push('/home');
+}
+else if(value.toLowerCase()==='female'){
+  router.push('/female');
+}
+else if(value.toLowerCase()==='male'){
+  router.push('/male');
+}
+else if(value.toLowerCase()==='kids'){
+  router.push('/kids');
+}
+else if(value.toLowerCase()==='shopping cart'){
+router.push('/shopping-cart');
+}
+else if(value.toLowerCase()==='all products')
+{
+  router.push('/all_products');
+}
+
   const before=(
     <header className={Style.header}>
         <nav>
@@ -21,7 +49,7 @@ export default function Navbar()
           </ul>
           <div className={Style.input}>
 <AiOutlineSearch className={Style.searchIcon}/>
-<input placeholder="What are you looking for" maxLength={25} />
+<input placeholder={value} maxLength={25} onChange={(e)=>{setValue(e.target.value)}} />
           </div>
          <Link href={'/shopping-cart'}><button className={Style.cart}><LuShoppingCart size={25}/></button></Link>
          <button className={Style.p} type="button" onClick={()=>update(now === 'now' ? 'mobile' : 'now')}>
