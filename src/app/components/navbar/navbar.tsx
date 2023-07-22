@@ -9,9 +9,7 @@ import {IoCloseOutline} from 'react-icons/io5'
 import {useRouter} from 'next/navigation'
 
 export default function Navbar()
-{
-  let a='hjdbdbn';
-  
+{ 
   const [now,update]=useState('now');
   const router=useRouter();
   const [value,setValue]=useState('What are you looking for');
