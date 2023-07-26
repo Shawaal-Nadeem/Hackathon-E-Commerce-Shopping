@@ -26,9 +26,10 @@ export default function ProductDetails({params}:productDetails)
     const data_Product=products.find(function search(slugVal){return slugVal.slug==params.slug}) as any;
 
    let [old,update]=useState(1);
+   const [state1,setState1]=useState("");
    function increment(plus:string){
     update(old+1);
-    setState(plus);
+    setState1(plus);
 };
    function decrement(minus:string){
     update(old-1);
@@ -36,14 +37,13 @@ if(old<=1)
 {
     update(old=1);
 }
-    setState(minus);
+    setState1(minus);
 }
 
 const [state,setState]=useState("");
 function descision(size:string){
 setState(size);
 }
-
 return (
     <div className={Style.main}>
         <div className={Style.subMain}>
@@ -67,9 +67,9 @@ return (
         </div>
         <div className={Style.quantitySection}>
             <p>Quantity</p>
-            <button onClick={()=>{increment('+')}} className={state==='+'?Style.changeColor:Style.button}>+</button>
+            <button onClick={()=>{increment('+')}} className={state1==='+'?Style.changeColor:Style.button}>+</button>
             <p>{old}</p>
-            <button onClick={()=>{decrement('-')}} className={state==='-'?Style.changeColor:Style.button}>-</button>
+            <button onClick={()=>{decrement('-')}} className={state1==='-'?Style.changeColor:Style.button}>-</button>
         </div>
         <div className={Style.totalSection}>
             <p>Total:</p>
