@@ -33,6 +33,12 @@ if(old<=1)
     update(old=1);
 }
 }
+
+const [state,setState]=useState("");
+function descision(size:string){
+setState(size);
+}
+
 return (
     <div className={Style.main}>
         <div className={Style.subMain}>
@@ -48,11 +54,11 @@ return (
         <h6>{data_Product.cloth_Type}</h6>
         <p>SELECT SIZE</p>
         <div className={Style.sizeBtns}>
-        <button>XS</button>
-        <button>S</button>
-        <button>M</button>
-        <button>L</button>
-        <button>XL</button>
+        <button onClick={()=>descision("XS")} className={state==='XS'?Style.changeColor:Style.button}>XS</button>
+        <button onClick={()=>descision("S")} className={state==='S'?Style.changeColor:Style.button}>S</button>
+        <button onClick={()=>descision("M")} className={state==='M'?Style.changeColor:Style.button}>M</button>
+        <button onClick={()=>descision("L")} className={state==='L'?Style.changeColor:Style.button}>L</button>
+        <button onClick={()=>descision("XL")} className={state==='XL'?Style.changeColor:Style.button}>XL</button>
         </div>
         <div className={Style.quantitySection}>
             <p>Quantity</p>

@@ -49,9 +49,20 @@
     gap: 18px;
     margin-top: 4%;
 }
-.sizeBtns button,.quantitySection button
+.sizeBtns .button,.quantitySection .button
 {
     background-color: rgb(229, 231, 235);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.changeColor
+{
+    background-color: black;
+    color: white;
     border-radius: 50%;
     width: 40px;
     height: 40px;
