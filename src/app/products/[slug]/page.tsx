@@ -26,12 +26,17 @@ export default function ProductDetails({params}:productDetails)
     const data_Product=products.find(function search(slugVal){return slugVal.slug==params.slug}) as any;
 
    let [old,update]=useState(1);
-   function increment(){update(old+1)};
-   function decrement(){update(old-1);
+   function increment(plus:string){
+    update(old+1);
+    setState(plus);
+};
+   function decrement(minus:string){
+    update(old-1);
 if(old<=1)
 {
     update(old=1);
 }
+    setState(minus);
 }
 
 const [state,setState]=useState("");
@@ -62,16 +67,16 @@ return (
         </div>
         <div className={Style.quantitySection}>
             <p>Quantity</p>
-            <button onClick={()=>{increment()}}>+</button>
+            <button onClick={()=>{increment('+')}} className={state==='+'?Style.changeColor:Style.button}>+</button>
             <p>{old}</p>
-            <button onClick={()=>{decrement()}}>-</button>
+            <button onClick={()=>{decrement('-')}} className={state==='-'?Style.changeColor:Style.button}>-</button>
         </div>
         <div className={Style.totalSection}>
             <p>Total:</p>
             <h5>{data_Product.price}<span>.00</span></h5>
         </div>
         <div className={Style.cartBtn}>
-        <button className={Style.shopingBtn}>
+        <button className={Style.shopingBtn} onClick={()=>{setTimeout(()=>{alert(`Added to Cart`)},1000)}}>
 <LuShoppingCart size={20}/>
         Add to Cart
         </button>
