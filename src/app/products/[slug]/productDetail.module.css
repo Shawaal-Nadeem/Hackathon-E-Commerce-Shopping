@@ -59,7 +59,7 @@
    align-items: center;
    justify-content: center;
 }
-.changeColor
+.changeColor,.quantitySection .button:hover
 {
     background-color: black;
     color: white;

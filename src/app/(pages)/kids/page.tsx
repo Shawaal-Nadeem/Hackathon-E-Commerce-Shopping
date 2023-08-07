@@ -12,7 +12,7 @@ function kidsData(data:any)
     <Image src={data.image} width={270} height={270} alt={data.name}/>
     <h1 className='cardName'>{data.name}</h1>
     <h3 className='clothType'>{data.cloth_Type}</h3>
-    <p className='priceCard'>{data.price}</p>
+    <p className='priceCard'>${data.price}</p>
     </Link>
   </div>
   )
