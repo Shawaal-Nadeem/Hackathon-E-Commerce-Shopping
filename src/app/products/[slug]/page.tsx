@@ -30,26 +30,31 @@ const [state,dispatch]=useReducer(descisionFun,{size:'XS'})
 function descisionFun(state:any,action:any){
 if(action.type==='XS'){
     return{
+    ...state,
     size:'XS',
     }
 }
 else if(action.type==='S'){
     return{
+        ...state,
         size:'S',
     }
 }
 else if(action.type==='M'){
     return{
+        ...state,
         size:'M',
     }
 }
 else if(action.type==='L'){
     return{
+        ...state,
         size:'L',
     }
 }
 else if(action.type==='XL'){
     return{
+        ...state,
         size:'XL',
     }
 }
@@ -59,6 +64,7 @@ const [state1,dispatch1]=useReducer(logicFun,{count:1,price:data_Product.price})
 function logicFun(state1:any,action:any){
 if(action.type==='inc'){
     return{
+    ...state1,
 count:state1.count+1,
 price:(state1.count+1)*data_Product.price
     }
@@ -66,12 +72,14 @@ price:(state1.count+1)*data_Product.price
 else if(action.type==='dec'){
     if(state1.count>1){
         return{
+            ...state1,
             count:state1.count-1,
             price:(state1.count-1)*data_Product.price
         }
     }
     else{
         return{
+            ...state1,
             count:state1.count,
             price:state1.count*(data_Product.price)
         }
