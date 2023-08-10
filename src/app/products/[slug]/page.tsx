@@ -1,7 +1,7 @@
 'use client'
 import products from "@/app/utils/mock";
 import Style from './productDetail.module.css';
-import StyleCart from '@/app/(pages)/shopping-cart/cart.module.css'
+// import StyleCart from '@/app/(pages)/shopping-cart/cart.module.css'
 import Image from "next/image";
 import { LuShoppingCart } from 'react-icons/lu';
 import {useReducer, useState } from "react";
@@ -178,7 +178,7 @@ export function Card()
     return(
     <>
     {arr.length===0?
-        <div className={StyleCart.bag}>
+        <div >
       <FiShoppingBag size={150}/>
       <p>Your shopping bag is empty</p>
     </div>:null    
