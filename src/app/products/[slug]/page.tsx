@@ -1,9 +1,30 @@
 'use client'
 import products from "@/app/utils/mock";
 import Style from './productDetail.module.css';
+import StyleCart from '/Hackathon/src/app/(pages)/shopping-cart/cart.module.css'
 import Image from "next/image";
 import { LuShoppingCart } from 'react-icons/lu';
-import { useReducer } from "react";
+import {useReducer, useState } from "react";
+import {FiShoppingBag} from 'react-icons/fi'
+import {RiDeleteBin6Line} from 'react-icons/ri'
+
+
+interface information
+{
+    productName:string,
+    productPrice:number,
+    productType:string,
+    productImage:string
+}
+const arr:information[]= [];
+
+
+
+
+
+
+
+
 function productsData(data:any)
 {
    slug:data.slug;
@@ -86,6 +107,26 @@ else if(action.type==='dec'){
     }
 }
 }
+
+
+const [run,setRun]=useState(false)
+if(run===true){
+
+    arr.push({
+        productName:data_Product.name,
+        productPrice:state1.price,
+        productType:data_Product.cloth_Type,
+        productImage:data_Product.image
+    })
+   
+}
+
+function Handle()
+{
+    setRun(true);
+    alert('Added to Cart');
+}
+
 return (
     <div className={Style.main}>
         <div className={Style.subMain}>
@@ -118,7 +159,7 @@ return (
             <h5>${state1.price}<span>.00</span></h5>
         </div>
         <div className={Style.cartBtn}>
-        <button className={Style.shopingBtn} onClick={()=>{setTimeout(()=>{alert(`${data_Product.name} added to cart successfully`)},500)}}>
+        <button className={Style.shopingBtn} onClick={()=>{Handle()}}>
 <LuShoppingCart size={20}/>
         Add to Cart
         </button>
@@ -129,3 +170,44 @@ return (
     </div>
 )
 }
+
+
+
+export function Card()
+{
+    return(
+    <>
+    {arr.length===0?
+        <div className={StyleCart.bag}>
+      <FiShoppingBag size={150}/>
+      <p>Your shopping bag is empty</p>
+    </div>:null    
+}
+    {arr.map((para:any,index:number)=>{
+        return(
+            <div className=" mt-14  flex justify-center">
+         <div className=' pt-2 pb-2 flex justify-between w-5/6 bg-slate-100'>
+        <div className=' flex gap-12 ml-4'>
+        <div>
+        <Image src={para.productImage} width={170} height={170} alt="Loading...." className=' rounded-2xl'></Image>
+         </div>
+         <div>
+        <h3 className=' text-xl font-semibold'>{para.productName}</h3>
+        <p className='text-gray-400 font-semibold mt-3'>{para.productType}</p>
+        <p className=' font-semibold mt-3'>Delivery Estimation</p>
+        <p className=' font-semibold text-amber-400 mt-3'>5 Working Days</p>
+        <p className=' font-extrabold mt-3'>${para.productPrice}</p>
+        </div>
+        </div>
+        <div className=' flex self-start mr-2'>
+        <RiDeleteBin6Line size={30}/>
+        </div> 
+        </div>
+    </div> 
+        )
+    })
+}
+    </>    
+    )
+}
+
