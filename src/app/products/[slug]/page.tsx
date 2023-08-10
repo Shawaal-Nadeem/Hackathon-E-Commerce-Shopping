@@ -1,7 +1,7 @@
 'use client'
 import products from "@/app/utils/mock";
 import Style from './productDetail.module.css';
-import StyleCart from '/Hackathon/src/app/(pages)/shopping-cart/cart.module.css'
+import StyleCart from '@/app/(pages)/shopping-cart/cart.module.css'
 import Image from "next/image";
 import { LuShoppingCart } from 'react-icons/lu';
 import {useReducer, useState } from "react";
