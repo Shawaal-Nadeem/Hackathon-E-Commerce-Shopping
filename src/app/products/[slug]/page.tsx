@@ -20,11 +20,6 @@ const arr:information[]= [];
 
 
 
-
-
-
-
-
 function productsData(data:any)
 {
    slug:data.slug;
