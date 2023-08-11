@@ -1,7 +1,7 @@
 'use client'
 import products from "@/app/utils/mock";
 import Style from './productDetail.module.css';
-// import StyleCart from '@/app/(pages)/shopping-cart/cart.module.css'
+import StyleCart from '@/app/(pages)/shopping-cart/cart.module.css'
 import Image from "next/image";
 import { LuShoppingCart } from 'react-icons/lu';
 import {useReducer, useState } from "react";
@@ -17,6 +17,11 @@ interface information
     productImage:string
 }
 const arr:information[]= [];
+
+
+
+
+
 
 
 
@@ -173,14 +178,14 @@ export function Card()
     return(
     <>
     {arr.length===0?
-        <div >
+        <div className={StyleCart.bag}>
       <FiShoppingBag size={150}/>
       <p>Your shopping bag is empty</p>
     </div>:null    
 }
     {arr.map((para:any,index:number)=>{
         return(
-            <div className=" mt-14  flex justify-center">
+            <div key={index} className=" mt-14  flex justify-center">
          <div className=' pt-2 pb-2 flex justify-between w-5/6 bg-slate-100'>
         <div className=' flex gap-12 ml-4'>
         <div>
