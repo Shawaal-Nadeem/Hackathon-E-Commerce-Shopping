@@ -187,7 +187,6 @@ export function Card()
 }
     {arr.map((para:any,index:number)=>{
         return(
-            <div className=" flex flex-col-reverse">
             <div key={index} className=" mt-14  flex justify-center">
          <div className=' pt-2 pb-2 flex justify-between w-5/6 bg-slate-100'>
         <div className=' flex gap-12 ml-4'>
@@ -207,7 +206,6 @@ export function Card()
         </div> 
         </div>
     </div>
-    </div> 
         )
     })
 }
