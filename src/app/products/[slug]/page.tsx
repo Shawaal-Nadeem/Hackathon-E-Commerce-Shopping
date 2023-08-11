@@ -7,6 +7,7 @@ import { LuShoppingCart } from 'react-icons/lu';
 import {useReducer, useState } from "react";
 import {FiShoppingBag} from 'react-icons/fi'
 import {RiDeleteBin6Line} from 'react-icons/ri'
+import { log } from "console";
 
 
 interface information
@@ -172,19 +173,21 @@ return (
 }
 
 
-
 export function Card()
 {
+    arr.reverse();
     return(
     <>
     {arr.length===0?
         <div className={StyleCart.bag}>
       <FiShoppingBag size={150}/>
       <p>Your shopping bag is empty</p>
+      
     </div>:null    
 }
     {arr.map((para:any,index:number)=>{
         return(
+            <div className=" flex flex-col-reverse">
             <div key={index} className=" mt-14  flex justify-center">
          <div className=' pt-2 pb-2 flex justify-between w-5/6 bg-slate-100'>
         <div className=' flex gap-12 ml-4'>
@@ -203,6 +206,7 @@ export function Card()
         <RiDeleteBin6Line size={30}/>
         </div> 
         </div>
+    </div>
     </div> 
         )
     })
