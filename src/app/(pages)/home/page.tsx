@@ -1,19 +1,9 @@
-'use client'
 import Style from './home.module.css'
 import { LuShoppingCart } from 'react-icons/lu'
 import Link from 'next/link'
-import { useState } from 'react'
+import { Email } from '@/app/components/email'
  const Home = () => {
   
-  const [mail,setMail]=useState('Email');
-  function alertMessage(){
-    if(mail!='Email'){
-      setTimeout(()=>{
-        alert(`Your Email: ${mail} is successfully sent!`);
-      },2000)
-  }
-}
-
   return (
     <div className={Style.home}>
       <div className={Style.contents}>
@@ -150,10 +140,7 @@ import { useState } from 'react'
         <div className={Style.content}>
           <h4>Subscribe Our Newsletter</h4>
           <p>Get the latest information and promo offers directly</p>
-          <div className={Style.email}>
-            <input placeholder={mail} type='email' size={25} maxLength={30} onChange={(e:any)=>{setMail(e.target.value)}}></input>
-            <button onClick={alertMessage}>Get Started</button>
-          </div>
+          <Email/>
         </div>
       </div>
       </div>

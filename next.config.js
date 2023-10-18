@@ -4,6 +4,7 @@ const nextConfig = {}
 module.exports = {
     images:
     {
-        domains:['hackathon-dine-market.vercel.app'],
+        domains: ['hackathon-dine-market.vercel.app'],
+        domains:['cdn.sanity.io']
     },
 };

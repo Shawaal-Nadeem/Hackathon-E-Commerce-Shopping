@@ -1,4 +1,4 @@
-const products = [
+const products = [ 
     {
         name: "Raglan Sweatshirt",
         slug: "Raglan-Sweatshirt",

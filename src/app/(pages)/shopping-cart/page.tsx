@@ -1,7 +1,6 @@
 import React from 'react'
 import Style from './cart.module.css'
-import { Card } from '@/app/products/[slug]/page'
-
+import { Card } from '@/app/components/cart'
  const ShoppingCart = () => {
  
   return (
